@@ -25,26 +25,16 @@ pipeline {
             }
         }
         stage('build jar') {
-            // when {
-            //     expression { 
-            //         BRANCH_NAME == 'main'
-            //      }
-            // }
             steps {
                 script {
-                    buildJar()
+                    buildJar 'kairatkaipov/demo-app:jma-3.0'
                 }
             }
         }
         stage('build image') {
-            // when {
-            //     expression { 
-            //         BRANCH_NAME == 'main'
-            //      }
-            // }
             steps {
                 script {
-                    buildImage()
+                    buildImage 'kairatkaipov/demo-app:jma-3.0'
                 }
             }
         }
