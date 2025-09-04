@@ -27,7 +27,7 @@ pipeline {
                 script {
                     buildImage 'kairatkaipov/demo-app:jma-3.0'
                     dockerLogin()
-                    pushImage 'kairatkaipov/demo-app:jma-3.0'
+                    dockerPush 'kairatkaipov/demo-app:jma-3.0'
                 }
             }
         }
