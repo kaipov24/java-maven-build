@@ -10,8 +10,7 @@ pipeline {
         stage('build jar') {
             steps {
                 script {
-                    // buildJar 'kairatkaipov/demo-app:jma-3.0'
-                    echo 'building the application...'
+                    buildJar 'kairatkaipov/demo-app:jma-3.0'
                 }
             }
         }
