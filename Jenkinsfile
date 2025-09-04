@@ -12,14 +12,14 @@ pipeline {
         stage('build jar') {
             steps {
                 script {
-                    buildJar('kairatkaipov/demo-app:jma-3.0')
+                    buildJar 'kairatkaipov/demo-app:jma-3.0'
                 }
             }
         }
         stage('build image') {
             steps {
                 script {
-                    buildImage('kairatkaipov/demo-app:jma-3.0')
+                    buildImage 'kairatkaipov/demo-app:jma-3.0'
                 }
             }
         }
