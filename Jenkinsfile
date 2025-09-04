@@ -17,6 +17,7 @@ pipeline {
             steps {
                 script {
                     gv.buildJar()
+                    echo 'Jar built successfully.'
                 }
             }
         }
